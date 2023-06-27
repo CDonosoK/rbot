@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<robot name="rbot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="ruedaIzquierda1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaIzquierda1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaIzquierda1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaIzquierda2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaIzquierda2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaIzquierda2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaIzquierda3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaIzquierda3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaIzquierda3_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaIzquierda4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaIzquierda4">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaIzquierda4_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaIzquierda5_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaIzquierda5">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaIzquierda5_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaDerecha5_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaDerecha5">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaDerecha5_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaDerecha4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaDerecha4">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaDerecha4_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaDerecha3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaDerecha3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaDerecha3_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaDerecha2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaDerecha2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaDerecha2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="ruedaDerecha1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="ruedaDerecha1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="ruedaDerecha1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

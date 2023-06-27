@@ -1,0 +1,47 @@
+rbot_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  ruedaIzquierda1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaIzquierda1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaIzquierda2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaIzquierda2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaIzquierda3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaIzquierda3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaIzquierda4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaIzquierda4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaIzquierda5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaIzquierda5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaDerecha5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaDerecha5
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaDerecha4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaDerecha4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaDerecha3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaDerecha3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaDerecha2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaDerecha2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  ruedaDerecha1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: ruedaDerecha1
+    pid: {p: 100.0, i: 0.01, d: 10.0}

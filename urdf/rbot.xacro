@@ -1,0 +1,1253 @@
+<?xml version="1.0" ?>
+<robot name="rbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find rbot)/urdf/materials.xacro" />
+<xacro:include filename="$(find rbot)/urdf/rbot.trans" />
+<xacro:include filename="$(find rbot)/urdf/rbot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.03303875979494125 0.023867134758111832 0.06307535187881412" rpy="0 0 0"/>
+    <mass value="0.44398234905881495"/>
+    <inertia ixx="0.001466" iyy="0.000868" izz="0.002334" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="baseRuedas_v3__1__1">
+  <inertial>
+    <origin xyz="-0.05690403018552741 0.042944608435334305 -0.09725410426977983" rpy="0 0 0"/>
+    <mass value="0.25465013251117774"/>
+    <inertia ixx="0.001194" iyy="0.000128" izz="0.001072" ixy="-0.0" iyz="4e-06" ixz="-9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.012027 0.019239 -0.124151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/baseRuedas_v3__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.012027 0.019239 -0.124151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/baseRuedas_v3__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="baseRuedas_v3_1">
+  <inertial>
+    <origin xyz="0.09892754977541737 -0.10673233891911665 -0.09725410426978061" rpy="0 0 0"/>
+    <mass value="0.2546501325111777"/>
+    <inertia ixx="0.001194" iyy="0.000128" izz="0.001072" ixy="-0.0" iyz="-4e-06" ixz="9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.012027 -0.130761 -0.124151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/baseRuedas_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.012027 -0.130761 -0.124151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/baseRuedas_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__9__1">
+  <inertial>
+    <origin xyz="-0.02484172334214506 -4.230869246057978e-07 1.2021058492378556e-07" rpy="0 0 0"/>
+    <mass value="0.03535675163245143"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.044961 -0.13024 -0.013542" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.044961 -0.13024 -0.013542" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__8__1">
+  <inertial>
+    <origin xyz="-0.024841723342145045 1.347580560889794e-07 3.518787988097613e-07" rpy="0 0 0"/>
+    <mass value="0.035356751632451444"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.044961 -0.073867 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.044961 -0.073867 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__7__1">
+  <inertial>
+    <origin xyz="-0.024841723342143712 1.347580562000017e-07 3.518787994006515e-07" rpy="0 0 0"/>
+    <mass value="0.03535675163245133"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.044961 -0.023867 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.044961 -0.023867 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__6__1">
+  <inertial>
+    <origin xyz="-0.024841723342142782 1.3475805644980188e-07 3.5187879987770045e-07" rpy="0 0 0"/>
+    <mass value="0.03535675163245158"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.044961 0.026133 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.044961 0.026133 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__5__1">
+  <inertial>
+    <origin xyz="-0.024841723342140756 1.347580566579687e-07 3.51878800194938e-07" rpy="0 0 0"/>
+    <mass value="0.0353567516324514"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.044961 0.076133 -0.012075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.044961 0.076133 -0.012075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__4__1">
+  <inertial>
+    <origin xyz="0.02484124293202969 -3.0739696137149775e-07 1.2021061102443498e-07" rpy="0 0 0"/>
+    <mass value="0.0353567516324516"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.111039 0.082505 -0.013542" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.111039 0.082505 -0.013542" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__3__1">
+  <inertial>
+    <origin xyz="0.024841242932031243 1.3475805844820332e-07 3.518788242582631e-07" rpy="0 0 0"/>
+    <mass value="0.03535675163245149"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.111039 0.026133 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.111039 0.026133 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__2__1">
+  <inertial>
+    <origin xyz="0.024841242932032104 1.3475805817064757e-07 3.518788239755032e-07" rpy="0 0 0"/>
+    <mass value="0.03535675163245141"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.111039 -0.023867 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.111039 -0.023867 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2__1__1">
+  <inertial>
+    <origin xyz="0.02484124293203327 1.3475805793472517e-07 3.5187882386643245e-07" rpy="0 0 0"/>
+    <mass value="0.03535675163245155"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.111039 -0.073867 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.111039 -0.073867 0.000925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rueda_v2_1">
+  <inertial>
+    <origin xyz="0.024841242932034185 1.3475805772655836e-07 3.5187882370564527e-07" rpy="0 0 0"/>
+    <mass value="0.035356751632451375"/>
+    <inertia ixx="5e-06" iyy="6e-06" izz="6e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.111039 -0.123867 -0.012075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.111039 -0.123867 -0.012075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rueda_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="principalBase_v7_1">
+  <inertial>
+    <origin xyz="-0.07898569721765447 -0.04164467609621604 -0.05634781340801458" rpy="0 0 0"/>
+    <mass value="0.06038093860786984"/>
+    <inertia ixx="0.000384" iyy="0.00013" izz="0.000508" ixy="0.0" iyz="4e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.112027 -0.055761 -0.126151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/principalBase_v7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.112027 -0.055761 -0.126151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/principalBase_v7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leftWall_v16_1">
+  <inertial>
+    <origin xyz="0.001453612011336869 0.10250455493239984 0.05199149925994917" rpy="0 0 0"/>
+    <mass value="0.07501829125647007"/>
+    <inertia ixx="0.000375" iyy="0.000118" izz="0.000257" ixy="0.0" iyz="-7e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.098039 0.071133 -0.077075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/leftWall_v16_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.098039 0.071133 -0.077075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/leftWall_v16_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="backWall_v23_1">
+  <inertial>
+    <origin xyz="-0.05000024020504985 0.0014996239556667457 0.052182914990692664" rpy="0 0 0"/>
+    <mass value="0.055006822384090145"/>
+    <inertia ixx="7.7e-05" iyy="0.000162" izz="8.5e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.083039 -0.128867 -0.077075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/backWall_v23_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.083039 -0.128867 -0.077075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/backWall_v23_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rightWall_v12_1">
+  <inertial>
+    <origin xyz="-0.001454092421450441 -0.08784155459412221 0.0519914992599492" rpy="0 0 0"/>
+    <mass value="0.07501829125647012"/>
+    <inertia ixx="0.000374" iyy="0.000118" izz="0.000256" ixy="-0.0" iyz="-8e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.031961 -0.118867 -0.077075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rightWall_v12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.031961 -0.118867 -0.077075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/rightWall_v12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lidar_LD19_v1_1">
+  <inertial>
+    <origin xyz="-2.4020505674099413e-07 0.02376508693199126 0.015124708602420392" rpy="0 0 0"/>
+    <mass value="0.27663941043418167"/>
+    <inertia ixx="5.1e-05" iyy="5.1e-05" izz="4.9e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.033049 0.074753 -0.099075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/Lidar_LD19_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.033049 0.074753 -0.099075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/Lidar_LD19_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frontalWall_v12_1">
+  <inertial>
+    <origin xyz="0.049999759794943074 0.02225334055973477 0.05883510915386936" rpy="0 0 0"/>
+    <mass value="0.08455976464228873"/>
+    <inertia ixx="0.000129" iyy="0.000226" izz="0.000185" ixy="0.0" iyz="-7e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.016961 0.081133 -0.077075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/frontalWall_v12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.016961 0.081133 -0.077075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/frontalWall_v12_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="secondBase_v1_1">
+  <inertial>
+    <origin xyz="0.049999759794942186 0.10500013475811329 0.00816804584972311" rpy="0 0 0"/>
+    <mass value="0.05256420344851981"/>
+    <inertia ixx="0.000342" iyy="0.000127" izz="0.000466" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.016961 0.081133 -0.181075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/secondBase_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.016961 0.081133 -0.181075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/secondBase_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upperWall_v18_1">
+  <inertial>
+    <origin xyz="0.04912494781313541 0.09911501537543027 0.0031722104335482337" rpy="0 0 0"/>
+    <mass value="0.07792994771250439"/>
+    <inertia ixx="0.000346" iyy="0.000144" izz="0.000477" ixy="-2e-06" iyz="-9e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.015711 0.064883 -0.194075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/upperWall_v18_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.015711 0.064883 -0.194075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/upperWall_v18_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cameraTupper_v2_1">
+  <inertial>
+    <origin xyz="-2.1817790282069316e-07 -0.07758113872770678 0.014454309445733449" rpy="0 0 0"/>
+    <mass value="0.04116743490340453"/>
+    <inertia ixx="4.8e-05" iyy="3.1e-05" izz="6.8e-05" ixy="-0.0" iyz="5e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.033039 -0.056367 -0.197075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/cameraTupper_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.033039 -0.056367 -0.197075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/cameraTupper_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FPV_Cam_V1_v2_1">
+  <inertial>
+    <origin xyz="0.05913275979494263 -0.03957234183835649 -0.20607564812091453" rpy="0 0 0"/>
+    <mass value="0.02858332475356308"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="2e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.026094 0.009172 -0.420151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/FPV_Cam_V1_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.026094 0.009172 -0.420151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/FPV_Cam_V1_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="antennaCamera_v4_1">
+  <inertial>
+    <origin xyz="-2.402050171337877e-07 0.012082645256639296 0.0359704074159061" rpy="0 0 0"/>
+    <mass value="0.05990705330829525"/>
+    <inertia ixx="5.9e-05" iyy="5.7e-05" izz="3e-06" ixy="0.0" iyz="-5e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.019961 -0.131867 -0.159075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/antennaCamera_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.019961 -0.131867 -0.159075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/antennaCamera_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="antennaCamera_v4__1__1">
+  <inertial>
+    <origin xyz="-2.402050175986936e-07 0.012082645256639352 0.03597040741590621" rpy="0 0 0"/>
+    <mass value="0.05990705330829525"/>
+    <inertia ixx="5.9e-05" iyy="5.7e-05" izz="3e-06" ixy="0.0" iyz="-5e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.086039 -0.131867 -0.159075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/antennaCamera_v4__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.086039 -0.131867 -0.159075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/antennaCamera_v4__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="battery_makita_12v_v2_1">
+  <inertial>
+    <origin xyz="4.1638284534809e-06 0.02309468574424034 -0.013229916127924873" rpy="0 0 0"/>
+    <mass value="0.17535914164576735"/>
+    <inertia ixx="0.000104" iyy="0.000133" izz="6.6e-05" ixy="-0.0" iyz="5e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.033039 -0.131867 -0.150575" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/battery_makita_12v_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.033039 -0.131867 -0.150575" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/battery_makita_12v_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="dc-dc_SZBK07_v1_1">
+  <inertial>
+    <origin xyz="-0.026716598381120366 -0.011183421491039652 -0.01957591400314572" rpy="0 0 0"/>
+    <mass value="0.2513000583308126"/>
+    <inertia ixx="7.7e-05" iyy="0.000113" izz="6.4e-05" ixy="-1e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.059539 -0.128867 -0.132822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/dc-dc_SZBK07_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.059539 -0.128867 -0.132822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/dc-dc_SZBK07_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pushButton_v1_1">
+  <inertial>
+    <origin xyz="1.033187565908228e-06 -2.4857066723144028e-06 -0.01124836235802576" rpy="0 0 0"/>
+    <mass value="0.04088565673711827"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.009961 -0.091867 -0.197075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/pushButton_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.009961 -0.091867 -0.197075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/pushButton_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="mainBase_v3_1">
+  <inertial>
+    <origin xyz="0.0650097068234283 0.05553292484656846 -0.005792400809510823" rpy="0 0 0"/>
+    <mass value="0.05561743739592649"/>
+    <inertia ixx="8.3e-05" iyy="8.3e-05" izz="0.000166" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.031961 0.021133 -0.084075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/mainBase_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.031961 0.021133 -0.084075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/mainBase_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Raspberry-Pi-4-Model-B-03_v1_1">
+  <inertial>
+    <origin xyz="-0.009501911792137666 0.019777073654239582 -0.06222717482491605" rpy="0 0 0"/>
+    <mass value="0.11046204859047104"/>
+    <inertia ixx="7.4e-05" iyy="3.3e-05" izz="0.000102" ixy="-2e-06" iyz="-7e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.021078 -0.013734 -0.156151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/Raspberry-Pi-4-Model-B-03_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.021078 -0.013734 -0.156151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/Raspberry-Pi-4-Model-B-03_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="secondBase_v6_1">
+  <inertial>
+    <origin xyz="0.06499975959740548 0.05138520440392968 -0.006132308970018846" rpy="0 0 0"/>
+    <mass value="0.034819217343680105"/>
+    <inertia ixx="5.2e-05" iyy="5.7e-05" izz="0.000109" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.031961 0.051133 -0.169075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/secondBase_v6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.031961 0.051133 -0.169075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/secondBase_v6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="protoboardPCB_1_v2_1">
+  <inertial>
+    <origin xyz="-0.010039342924961201 0.02863313489488067 -0.15582564804126955" rpy="0 0 0"/>
+    <mass value="0.03754601841479806"/>
+    <inertia ixx="1.6e-05" iyy="8e-06" izz="2.4e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016078 0.046266 -0.325151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/protoboardPCB_1_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016078 0.046266 -0.325151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/protoboardPCB_1_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="protoboardPCB_1_v2__1__1">
+  <inertial>
+    <origin xyz="-0.01003934292496133 0.02863313489488073 -0.1558256480412697" rpy="0 0 0"/>
+    <mass value="0.03754601841479806"/>
+    <inertia ixx="1.6e-05" iyy="8e-06" izz="2.4e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.070078 0.046266 -0.325151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/protoboardPCB_1_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.070078 0.046266 -0.325151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/protoboardPCB_1_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ESP32_v1_1">
+  <inertial>
+    <origin xyz="0.01017989522899809 0.01311754851604223 -0.1619057382020499" rpy="0 0 0"/>
+    <mass value="0.040329224591924194"/>
+    <inertia ixx="7e-06" iyy="3e-06" izz="1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.012864 0.024942 -0.338676" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/ESP32_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.012864 0.024942 -0.338676" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/ESP32_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ESP32_v1__1__1">
+  <inertial>
+    <origin xyz="0.01017989522899742 0.06711754851604236 -0.1619057382020509" rpy="0 0 0"/>
+    <mass value="0.040329224591924194"/>
+    <inertia ixx="7e-06" iyy="3e-06" izz="1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.041136 0.078942 -0.338676" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/ESP32_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.041136 0.078942 -0.338676" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/ESP32_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="protoboardPCB_2_v2_1">
+  <inertial>
+    <origin xyz="-0.04603924020506281 -0.0013668663913655246 -0.07082564812118644" rpy="0 0 0"/>
+    <mass value="0.022620518499094994"/>
+    <inertia ixx="9e-06" iyy="2e-06" izz="1.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.116078 -0.057734 -0.156151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/protoboardPCB_2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.116078 -0.057734 -0.156151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/protoboardPCB_2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RBOT_v2_1">
+  <inertial>
+    <origin xyz="-0.0252473847457979 -0.05003886521826659 0.029263430235938435" rpy="0 0 0"/>
+    <mass value="0.012660006114512078"/>
+    <inertia ixx="1e-06" iyy="9e-06" izz="8e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.058606 0.033094 -0.052558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/RBOT_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.058606 0.033094 -0.052558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/RBOT_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="middleBase_v8_1">
+  <inertial>
+    <origin xyz="0.068371484848462 0.046451238033599115 -0.0055582793962941635" rpy="0 0 0"/>
+    <mass value="0.030648070521504304"/>
+    <inertia ixx="3.5e-05" iyy="4.5e-05" izz="8e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.031961 0.011133 -0.134075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/middleBase_v8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.031961 0.011133 -0.134075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/middleBase_v8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lm2596_v1_1">
+  <inertial>
+    <origin xyz="-0.041030086858887045 -0.041310648133780895 -0.11801780028414793" rpy="0 0 0"/>
+    <mass value="0.03488162453813328"/>
+    <inertia ixx="5e-06" iyy="1e-06" izz="6e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.046078 -0.100734 -0.256151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/lm2596_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.046078 -0.100734 -0.256151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/lm2596_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lm2596_v1__1__1">
+  <inertial>
+    <origin xyz="-0.04103008685888722 -0.04131064813378086 -0.1180178002841479" rpy="0 0 0"/>
+    <mass value="0.03488162453813328"/>
+    <inertia ixx="5e-06" iyy="1e-06" izz="6e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.072078 -0.100734 -0.256151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/lm2596_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.072078 -0.100734 -0.256151" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/lm2596_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="logoLeft_v4_1">
+  <inertial>
+    <origin xyz="-0.12207524022911655 -0.0808150608187451 -0.06229394360924592" rpy="0 0 0"/>
+    <mass value="0.004313154195684161"/>
+    <inertia ixx="4e-06" iyy="0.0" izz="4e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.223114 -0.123906 -0.170192" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/logoLeft_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.223114 -0.123906 -0.170192" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/logoLeft_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LED_1V_v1_1">
+  <inertial>
+    <origin xyz="-0.10874220740795236 0.047396718992991624 0.028182698745530352" rpy="0 0 0"/>
+    <mass value="0.0011643645621838923"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.103782 0.071094 -0.110558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/LED_1V_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.103782 0.071094 -0.110558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/LED_1V_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LED_1V_v1__1__1">
+  <inertial>
+    <origin xyz="-0.08874220740795258 0.027396718992991564 0.028182698745530296" rpy="0 0 0"/>
+    <mass value="0.0011643645621838923"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.103782 0.051094 -0.110558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/LED_1V_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.103782 0.051094 -0.110558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/LED_1V_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LED_1V_v1__2__1">
+  <inertial>
+    <origin xyz="-0.05274220740795272 -0.008603281007008426 0.028182698745530296" rpy="0 0 0"/>
+    <mass value="0.0011643645621838923"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.103782 0.015094 -0.110558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/LED_1V_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.103782 0.015094 -0.110558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/LED_1V_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LED_1V_v1__3__1">
+  <inertial>
+    <origin xyz="-0.03274427300216144 -0.028603281007008437 0.028188498192337638" rpy="0 0 0"/>
+    <mass value="0.0011643645621838923"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.103782 -0.004906 -0.110558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/LED_1V_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.103782 -0.004906 -0.110558" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/LED_1V_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="logoRight_v2_1">
+  <inertial>
+    <origin xyz="-0.12507524020505661 0.06543577380790828 -0.06962364739170018" rpy="0 0 0"/>
+    <mass value="0.004313115071367782"/>
+    <inertia ixx="4e-06" iyy="0.0" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.090114 0.010094 -0.177692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/logoRight_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.090114 0.010094 -0.177692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rbot/meshes/logoRight_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigida6" type="fixed">
+  <origin xyz="0.012027 -0.019239 0.124151" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="baseRuedas_v3__1__1"/>
+</joint>
+
+<joint name="Rigida7" type="fixed">
+  <origin xyz="0.012027 0.130761 0.124151" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="baseRuedas_v3_1"/>
+</joint>
+
+<joint name="ruedaIzquierda1" type="continuous">
+  <origin xyz="-0.056988 0.149479 -0.110609" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3__1__1"/>
+  <child link="rueda_v2__9__1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="ruedaIzquierda2" type="continuous">
+  <origin xyz="-0.056988 0.093106 -0.125076" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3__1__1"/>
+  <child link="rueda_v2__8__1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="ruedaIzquierda3" type="continuous">
+  <origin xyz="-0.056988 0.043106 -0.125076" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3__1__1"/>
+  <child link="rueda_v2__7__1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="ruedaIzquierda4" type="continuous">
+  <origin xyz="-0.056988 -0.006894 -0.125076" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3__1__1"/>
+  <child link="rueda_v2__6__1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="ruedaIzquierda5" type="continuous">
+  <origin xyz="-0.056988 -0.056894 -0.112076" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3__1__1"/>
+  <child link="rueda_v2__5__1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="ruedaDerecha5" type="continuous">
+  <origin xyz="0.099012 -0.213266 -0.110609" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3_1"/>
+  <child link="rueda_v2__4__1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="ruedaDerecha4" type="continuous">
+  <origin xyz="0.099012 -0.156894 -0.125076" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3_1"/>
+  <child link="rueda_v2__3__1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="ruedaDerecha3" type="continuous">
+  <origin xyz="0.099012 -0.106894 -0.125076" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3_1"/>
+  <child link="rueda_v2__2__1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="ruedaDerecha2" type="continuous">
+  <origin xyz="0.099012 -0.056894 -0.125076" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3_1"/>
+  <child link="rueda_v2__1__1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="ruedaDerecha1" type="continuous">
+  <origin xyz="0.099012 -0.006894 -0.112076" rpy="0 0 0"/>
+  <parent link="baseRuedas_v3_1"/>
+  <child link="rueda_v2_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="R\EDgida 116" type="fixed">
+  <origin xyz="0.112027 0.055761 0.126151" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="principalBase_v7_1"/>
+</joint>
+
+<joint name="R\EDgida 117" type="fixed">
+  <origin xyz="-0.013988 -0.126894 -0.049076" rpy="0 0 0"/>
+  <parent link="principalBase_v7_1"/>
+  <child link="leftWall_v16_1"/>
+</joint>
+
+<joint name="R\EDgida 118" type="fixed">
+  <origin xyz="-0.028988 0.073106 -0.049076" rpy="0 0 0"/>
+  <parent link="principalBase_v7_1"/>
+  <child link="backWall_v23_1"/>
+</joint>
+
+<joint name="R\EDgida 119" type="fixed">
+  <origin xyz="-0.143988 0.063106 -0.049076" rpy="0 0 0"/>
+  <parent link="principalBase_v7_1"/>
+  <child link="rightWall_v12_1"/>
+</joint>
+
+<joint name="R\EDgida 120" type="fixed">
+  <origin xyz="-0.078978 -0.130514 -0.027076" rpy="0 0 0"/>
+  <parent link="principalBase_v7_1"/>
+  <child link="Lidar_LD19_v1_1"/>
+</joint>
+
+<joint name="R\EDgida 121" type="fixed">
+  <origin xyz="-0.128988 -0.136894 -0.049076" rpy="0 0 0"/>
+  <parent link="principalBase_v7_1"/>
+  <child link="frontalWall_v12_1"/>
+</joint>
+
+<joint name="R\EDgida 122" type="fixed">
+  <origin xyz="0.0 0.0 0.104" rpy="0 0 0"/>
+  <parent link="frontalWall_v12_1"/>
+  <child link="secondBase_v1_1"/>
+</joint>
+
+<joint name="R\EDgida 123" type="fixed">
+  <origin xyz="0.00125 0.01625 0.013" rpy="0 0 0"/>
+  <parent link="secondBase_v1_1"/>
+  <child link="upperWall_v18_1"/>
+</joint>
+
+<joint name="R\EDgida 124" type="fixed">
+  <origin xyz="0.04875 0.12125 0.003" rpy="0 0 0"/>
+  <parent link="upperWall_v18_1"/>
+  <child link="cameraTupper_v2_1"/>
+</joint>
+
+<joint name="R\EDgida 126" type="fixed">
+  <origin xyz="-0.059133 -0.065539 0.223076" rpy="0 0 0"/>
+  <parent link="cameraTupper_v2_1"/>
+  <child link="FPV_Cam_V1_v2_1"/>
+</joint>
+
+<joint name="R\EDgida 127" type="fixed">
+  <origin xyz="-0.103 0.003 0.082" rpy="0 0 0"/>
+  <parent link="backWall_v23_1"/>
+  <child link="antennaCamera_v4_1"/>
+</joint>
+
+<joint name="R\EDgida 128" type="fixed">
+  <origin xyz="0.003 0.003 0.082" rpy="0 0 0"/>
+  <parent link="backWall_v23_1"/>
+  <child link="antennaCamera_v4__1__1"/>
+</joint>
+
+<joint name="R\EDgida 129" type="fixed">
+  <origin xyz="-0.05 0.003 0.0735" rpy="0 0 0"/>
+  <parent link="backWall_v23_1"/>
+  <child link="battery_makita_12v_v2_1"/>
+</joint>
+
+<joint name="R\EDgida 130" type="fixed">
+  <origin xyz="-0.0235 0.0 0.055747" rpy="0 0 0"/>
+  <parent link="backWall_v23_1"/>
+  <child link="dc-dc_SZBK07_v1_1"/>
+</joint>
+
+<joint name="R\EDgida 131" type="fixed">
+  <origin xyz="0.00575 0.15675 0.003" rpy="0 0 0"/>
+  <parent link="upperWall_v18_1"/>
+  <child link="pushButton_v1_1"/>
+</joint>
+
+<joint name="R\EDgida 133" type="fixed">
+  <origin xyz="0.0 -0.14 0.007" rpy="0 0 0"/>
+  <parent link="rightWall_v12_1"/>
+  <child link="mainBase_v3_1"/>
+</joint>
+
+<joint name="R\EDgida 134" type="fixed">
+  <origin xyz="0.053039 0.034867 0.072076" rpy="0 0 0"/>
+  <parent link="mainBase_v3_1"/>
+  <child link="Raspberry-Pi-4-Model-B-03_v1_1"/>
+</joint>
+
+<joint name="R\EDgida 135" type="fixed">
+  <origin xyz="0.0 -0.17 0.092" rpy="0 0 0"/>
+  <parent link="rightWall_v12_1"/>
+  <child link="secondBase_v6_1"/>
+</joint>
+
+<joint name="R\EDgida 136" type="fixed">
+  <origin xyz="0.048039 0.004867 0.156076" rpy="0 0 0"/>
+  <parent link="secondBase_v6_1"/>
+  <child link="protoboardPCB_1_v2_1"/>
+</joint>
+
+<joint name="R\EDgida 137" type="fixed">
+  <origin xyz="0.102039 0.004867 0.156076" rpy="0 0 0"/>
+  <parent link="secondBase_v6_1"/>
+  <child link="protoboardPCB_1_v2__1__1"/>
+</joint>
+
+<joint name="R\EDgida 138" type="fixed">
+  <origin xyz="-0.028942 0.021324 0.013525" rpy="0 0 0"/>
+  <parent link="protoboardPCB_1_v2_1"/>
+  <child link="ESP32_v1_1"/>
+</joint>
+
+<joint name="R\EDgida 139" type="fixed">
+  <origin xyz="-0.028942 -0.032676 0.013525" rpy="0 0 0"/>
+  <parent link="protoboardPCB_1_v2__1__1"/>
+  <child link="ESP32_v1__1__1"/>
+</joint>
+
+<joint name="R\EDgida 140" type="fixed">
+  <origin xyz="0.148039 0.078867 0.072076" rpy="0 0 0"/>
+  <parent link="mainBase_v3_1"/>
+  <child link="protoboardPCB_2_v2_1"/>
+</joint>
+
+<joint name="R\EDgida 141" type="fixed">
+  <origin xyz="0.075567 0.048039 -0.024517" rpy="0 0 0"/>
+  <parent link="frontalWall_v12_1"/>
+  <child link="RBOT_v2_1"/>
+</joint>
+
+<joint name="R\EDgida 143" type="fixed">
+  <origin xyz="0.0 -0.13 0.057" rpy="0 0 0"/>
+  <parent link="rightWall_v12_1"/>
+  <child link="middleBase_v8_1"/>
+</joint>
+
+<joint name="R\EDgida 144" type="fixed">
+  <origin xyz="0.078039 0.111867 0.122076" rpy="0 0 0"/>
+  <parent link="middleBase_v8_1"/>
+  <child link="lm2596_v1_1"/>
+</joint>
+
+<joint name="R\EDgida 145" type="fixed">
+  <origin xyz="0.104039 0.111867 0.122076" rpy="0 0 0"/>
+  <parent link="middleBase_v8_1"/>
+  <child link="lm2596_v1__1__1"/>
+</joint>
+
+<joint name="R\EDgida 146" type="fixed">
+  <origin xyz="0.125075 0.195039 0.093117" rpy="0 0 0"/>
+  <parent link="leftWall_v16_1"/>
+  <child link="logoLeft_v4_1"/>
+</joint>
+
+<joint name="R\EDgida 147" type="fixed">
+  <origin xyz="0.120743 0.010039 0.033483" rpy="0 0 0"/>
+  <parent link="frontalWall_v12_1"/>
+  <child link="LED_1V_v1_1"/>
+</joint>
+
+<joint name="R\EDgida 148" type="fixed">
+  <origin xyz="0.120743 0.030039 0.033483" rpy="0 0 0"/>
+  <parent link="frontalWall_v12_1"/>
+  <child link="LED_1V_v1__1__1"/>
+</joint>
+
+<joint name="R\EDgida 149" type="fixed">
+  <origin xyz="0.120743 0.066039 0.033483" rpy="0 0 0"/>
+  <parent link="frontalWall_v12_1"/>
+  <child link="LED_1V_v1__2__1"/>
+</joint>
+
+<joint name="R\EDgida 150" type="fixed">
+  <origin xyz="0.120743 0.086039 0.033483" rpy="0 0 0"/>
+  <parent link="frontalWall_v12_1"/>
+  <child link="LED_1V_v1__3__1"/>
+</joint>
+
+<joint name="R\EDgida 152" type="fixed">
+  <origin xyz="0.122075 -0.128961 0.100617" rpy="0 0 0"/>
+  <parent link="rightWall_v12_1"/>
+  <child link="logoRight_v2_1"/>
+</joint>
+
+</robot>
